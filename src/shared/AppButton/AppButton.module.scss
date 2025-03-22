@@ -1,0 +1,20 @@
+.appButton {
+  cursor: pointer;
+}
+
+.primary {
+  color: var(--text-primary);
+}
+
+.inverted {
+  color: var(--text-inverted-primary);
+}
+
+.accented {
+  color: var(--accented-color);
+}
+
+.clear {
+  background: none;
+  padding: 8px 12px;
+}

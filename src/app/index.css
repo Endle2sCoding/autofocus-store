@@ -1,0 +1,94 @@
+:root {
+  --font-family-main: 'Courier New', Courier, monospace;
+  ;
+  --font-z-xs: 14px;
+  --font-z-s: 16px;
+  --font-z-m: 20px;
+  --font-z-l: 24px;
+  --font-z-xl: 32px;
+  --font-z-xxl: 40px;
+  --font-z-xxxl: 48px;
+
+  /* Sizes */
+  --header-height: 80px;
+
+  /* Delay */
+  --transition-delay: 0.3s;
+
+  /* Colors */
+  --text-primary: #000;
+  --text-secondary: #333;
+
+  --text-inverted-primary: #ffffff;
+  --text-inverted-secondary: #f2ebe6;
+
+  --bg-primary: #ffffff;
+  --bg-secondary: #f2ebe6;
+
+  --accented-color: #2c2cf0;
+
+  --bg-gradient: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.65));
+  --bg-gradient-dark: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95));
+
+  --accent-shadow: .5px .5px 1px black,
+    0 0 0.2em var(--accent-color),
+    0 0 0.2em var(--accent-color);
+  ;
+  --accent-shadow-light:
+    .1px .1px 1px #fff,
+    0 0 0.05em var(--accent-color),
+    0 0 0.05em var(--accent-color);
+  ;
+
+  /* Medis */
+  --bigdesctop: "1400px";
+  --desctop: "1200px";
+  --laptop: "961px";
+  --tablet: "767px";
+  --portraitTablets: "640px";
+  --eReaders: "480px";
+  --smartphone: "400px";
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: var(--font-z-m);
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+html,
+body {
+  background: var(--bg-primary);
+  width: 100%;
+  color: var(--text-primary);
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: var(--header-height) 0;
+}
+
+
+section:nth-of-type(even) {
+  background: var(--bg-secondary);
+}
+
+
+
+/* section:nth-child(n+2) {
+  background: none;
+} */

@@ -1,0 +1,38 @@
+.appButton {
+  cursor: pointer;
+}
+
+.primary {
+  color: var(--text-primary);
+}
+
+.inverted {
+  color: var(--text-inverted-primary);
+}
+
+.accented {
+  color: var(--accented-color);
+}
+
+.clear {
+  transition: color linear var(--transition-delay);
+  background: none;
+  padding: 8px 12px;
+}
+
+.clear:hover {
+  color: var(--accented-color);
+}
+
+.filled {
+  padding: 8px 12px;
+  background: var(--accented-color);
+  border: 1px solid var(--accented-color);
+  border-radius: 4px;
+}
+
+.filled:hover {
+  transition: all linear var(--transition-delay);
+  background: var(--bg-secondary);
+  color: var(--accented-color);
+}

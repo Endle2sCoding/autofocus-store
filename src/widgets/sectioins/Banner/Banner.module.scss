@@ -1,0 +1,19 @@
+.banner {
+  margin-top: var(--header-height);
+  height: calc(100vh - var(--header-height));
+  background: var(--bg-gradient),
+    url(../../../assets/img/1.jpg) 0 100% / 70% 100% no-repeat,
+    url(../../../assets/img/0.jpg) 100% 0%/ 30% 34% no-repeat,
+    url(../../../assets/img/6.jpg) 100% 50% / 30% 34% no-repeat,
+    url(../../../assets/img/11.jpg) 100% 100%/ 30% 33% no-repeat,
+}
+
+.container {
+  height: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 32px;
+}
