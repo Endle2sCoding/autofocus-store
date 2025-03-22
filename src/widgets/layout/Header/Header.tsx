@@ -5,6 +5,7 @@ import Logo from "@/assets/logo.svg?react";
 import { AppLink } from "@/shared/AppLink/AppLink";
 import { Link } from "react-router-dom";
 
+// const navLinks=[{}]
 export const Header = () => {
   return (
     <header>
@@ -52,7 +53,7 @@ export const Header = () => {
               </li> */}
             <li>
               <AppLink
-                href="#form"
+                href="#contacts"
                 className="link"
               >
                 Контакты

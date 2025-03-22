@@ -3,7 +3,7 @@ import s from "./AppButton.module.scss";
 interface AppButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   className?: string;
-  decorator?: "clear";
+  decorator?: "clear" | "filled";
   colorType?: "primary" | "inverted" | "accented";
 }
 export const AppButton = ({
@@ -14,7 +14,12 @@ export const AppButton = ({
 }: AppButtonProps) => {
   return (
     <button
-      className={`${s.appButton} ${s[decorator]} ${s[colorType]} ${className}`}
+      className={`
+        ${s.appButton}
+         ${s[decorator]} 
+         ${s[colorType]} 
+         ${className}
+         `}
     >
       {children}
     </button>

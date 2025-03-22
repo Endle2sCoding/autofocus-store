@@ -1,43 +1,23 @@
 import { AppContainer } from "@/shared/AppContainer/AppContainer";
-
+import s from "./Footer.module.scss";
 export function Footer() {
   return (
-    <footer className="footer">
+    <footer className={s.footer}>
       <AppContainer>
-        <nav className="footer-nav">
-          <a
-            href="#banner"
-            className="link"
-          >
-            Главная
-          </a>
-          <a
-            href="#cards"
-            className="link"
-          >
-            Наши услги
-          </a>
-          <a
-            href="#about"
-            className="link"
-          >
-            О нас
-          </a>
-          <a
-            href="#form"
-            className="link"
-          >
-            Запросить звонок
-          </a>
-          <a
-            href="#form"
-            className="link"
-          >
-            Контакты
-          </a>
-        </nav>
-        <div className="socials">
-          <a href=""></a>
+        <div className="contacts">
+          <span>
+            Телефон: <span className="phone"> +7(999)-999-99-99 </span>
+          </span>
+          <span>
+            Email:<span className="email"> mail@mail.ru</span>
+          </span>
+          <span>
+            Телеграмм <span className="tg">https://telegram.org/</span>
+          </span>
+        </div>
+        <div className={s.copyright}>
+          {" "}
+          © {new Date().getFullYear()} Все права защищены.
         </div>
       </AppContainer>
     </footer>

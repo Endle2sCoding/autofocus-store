@@ -1,14 +1,15 @@
 import { AppContainer } from "@/shared/AppContainer/AppContainer";
-
+import { AppTitle } from "@/shared/AppTitle/AppTitle";
+import s from "./About.module.scss";
 export function About() {
   return (
     <section
       className="about"
       id="about"
     >
-      <AppContainer className="container">
+      <AppContainer className={s.container}>
         <div className="about__inner">
-          <h3 className="title">О нас</h3>
+          <AppTitle sectionTitle>О нас</AppTitle>
           <p className="about__text">
             Мы молодая развивающася компания, предоставляющая услуги по
             модернизации деревообрабатывающих станков. Работаем по России и СНГ.

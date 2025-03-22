@@ -1,0 +1,26 @@
+.appInputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+textarea {
+  height: 300px;
+}
+
+.appInput {
+  border-radius: var(--b-rad-s);
+  border: none;
+  padding: 8px 12px;
+  width: 100%;
+
+
+  &:focus {
+    outline: 1px solid var(--accented-color);
+  }
+
+
+}
+
+.error {
+  position: absolute;
+}

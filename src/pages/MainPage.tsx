@@ -1,7 +1,7 @@
 import { Footer } from "@/widgets/layout/Footer/Footer";
 import { About } from "@/widgets/sectioins/About/About";
 import { Banner } from "@/widgets/sectioins/Banner/Banner";
-import { Form } from "@/widgets/sectioins/Form/Form";
+import { Contacts } from "@/widgets/sectioins/Contacts/Contacts";
 import { ServicesList } from "@/widgets/sectioins/ServicesList/ServicesList";
 
 const MainPage = () => {
@@ -9,7 +9,7 @@ const MainPage = () => {
     <>
       <Banner />
       <ServicesList />
-      <Form />
+      <Contacts />
       <About />
       <Footer />
     </>

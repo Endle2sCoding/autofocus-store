@@ -11,6 +11,8 @@
 
   /* Sizes */
   --header-height: 80px;
+  --b-rad-s: 4px;
+  --b-rad-m: 12px;
 
   /* Delay */
   --transition-delay: 0.3s;
@@ -79,6 +81,7 @@ body {
 }
 
 section {
+  width: 100%;
   padding: var(--header-height) 0;
 }
 
@@ -86,9 +89,3 @@ section {
 section:nth-of-type(even) {
   background: var(--bg-secondary);
 }
-
-
-
-/* section:nth-child(n+2) {
-  background: none;
-} */

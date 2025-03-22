@@ -3,19 +3,25 @@ import s from "./AppTitle.module.scss";
 interface AppTitleProps {
   children?: ReactNode;
   className?: string;
-  colorType?: "primary" | "invertedPrimary";
-  Title?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  colorType?: "primary" | "inverted";
+  TagName?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+  sectionTitle?: boolean;
 }
 
 export const AppTitle = ({
   children,
   colorType = "primary",
-  Title = "h2",
+  TagName = "h2",
+  sectionTitle = false,
   className,
 }: AppTitleProps) => {
   return (
-    <Title className={`${s.appText} ${className} ${s[colorType]}`}>
+    <TagName
+      className={`${s.appText}  ${s[colorType]} ${
+        sectionTitle ? s.sectionTitle : ""
+      } ${className}`}
+    >
       {children}
-    </Title>
+    </TagName>
   );
 };

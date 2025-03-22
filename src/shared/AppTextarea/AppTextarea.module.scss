@@ -1,0 +1,22 @@
+.appTextareaWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.appTextarea {
+  border-radius: var(--b-rad-s);
+  border: none;
+  padding: 8px 12px;
+  width: 100%;
+  resize: none;
+
+  &:focus {
+    outline: 1px solid var(--accented-color);
+  }
+
+
+}
+
+.error {
+  position: absolute;
+}

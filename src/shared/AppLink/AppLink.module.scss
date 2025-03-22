@@ -1,4 +1,4 @@
-.appButton {
+.appLink {
   cursor: pointer;
 }
 
@@ -28,7 +28,7 @@
   padding: 8px 12px;
   background: var(--accented-color);
   border: 1px solid var(--accented-color);
-  border-radius: 4px;
+  border-radius: var(--b-rad-s);
 }
 
 .filled:hover {

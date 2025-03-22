@@ -2,8 +2,12 @@
   color: var(--text-primary);
 }
 
-.invertedPrimary {
+.inverted {
   color: var(--text-inverted-primary);
+}
+
+.sectionTitle {
+  margin-bottom: var(--header-height);
 }
 
 h1 {
@@ -11,5 +15,12 @@ h1 {
 }
 
 h2 {
+  font-size: var(--font-z-xxl);
+}
+
+h3 {
   font-size: var(--font-z-xl);
+}
+h4 {
+  font-size: var(--font-z-l);
 }
